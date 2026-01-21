@@ -54,7 +54,7 @@ const Navbar = () => {
 
             {/* Mobile Menu Overlay */}
             {isOpen && (
-                <div className="fixed top-0 left-0 w-full h-screen bg-[var(--color-paper)] z-40 flex flex-col items-center justify-center gap-8 md:hidden">
+                <div className="fixed top-0 left-0 w-full h-auto min-h-[50vh] bg-[var(--color-paper)] opacity-95 z-40 flex flex-col items-center pt-32 pb-10 gap-8 md:hidden rounded-b-[3rem] shadow-2xl transition-all duration-300">
                     {navLinks.map((link) => (
                         <a
                             key={link.name}
